@@ -249,30 +249,21 @@
 --------
 ### Install 安装:
 
-- CoInput 综合输入模块组
-  
-   1）首先根据自己ComfyUI版本选择下载old或new（ComfyUI版本在2023.09.08之前的选择old）
-  
-  First, choose to download either old or new based on your ComfyUI version(Choose "old" for ComfyUI versions before September 8, 2023）.
-  
-   2）下载好之后解压放置到custom nodes文件夹（注意解压之后不要有嵌套）
-  
-  After downloading, extract and place it in the custom node folder (make sure there are no nested folders after extraction).
+* 下载之后解压，找到三个文件夹（Zho_Selector、Zho_Standard_new、Zho_Standard_old）
 
-   3）重启ComfyUI
-  
-  Restart ComfyUI.
+   Download and unzip the files. You will find three folders: Zho_Selector, Zho_Standard_new, and Zho_Standard_old.
 
+* CoInput ：根据自己ComfyUI版本选择old或new（ComfyUI版本在2023.09.08之前的选择old），放置到custom nodes文件夹中（注意解压之后不要有嵌套）
 
-- Selector 选择器模块组
-  
-   1）下载好之后解压放置到custom nodes文件夹（注意解压之后不要有嵌套）
-  
-  After downloading, extract and place it in the custom node folder (ensure there are no nested folders after extraction).
+   CoInput nodes: Choose "old" or "new" based on your ComfyUI version (choose "old" for ComfyUI versions before September 8, 2023). Place it in the custom nodes folder (make sure there is no nested folder after unzipping).
 
-   2）重启ComfyUI
+* Selector ：直接将Zho_Selector文件夹放置到custom nodes文件夹中（注意解压之后不要有嵌套）
+
+   Selector : Simply place the Zho_Selector folder directly into the custom nodes folder (ensure there is no nested folder after unzipping).
+
+* 重启ComfyUI
   
-  Restart ComfyUI.
+   Restart ComfyUI.
 
 
 
