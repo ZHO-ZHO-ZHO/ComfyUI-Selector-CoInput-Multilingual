@@ -251,7 +251,7 @@
 
 ### 1) Direct Download
 
-* 下载之后解压，找到三个文件夹（Zho_Selector、Zho_Standard_new、Zho_Standard_old）
+* 下载之后解压，找到三个文件夹（Zho_Selector、Zho_CoInput_new、Zho_CoInput_old）
 
    Download and unzip the files. You will find three folders: Zho_Selector, Zho_CoInput_new, and Zho_CoInput_old.
 
