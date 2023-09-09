@@ -251,7 +251,7 @@
 
 * 下载之后解压，找到三个文件夹（Zho_Selector、Zho_Standard_new、Zho_Standard_old）
 
-   Download and unzip the files. You will find three folders: Zho_Selector, Zho_Standard_new, and Zho_Standard_old.
+   Download and unzip the files. You will find three folders: Zho_Selector, Zho_CoInput_new, and Zho_CoInput_old.
 
 * CoInput ：根据自己ComfyUI版本选择old或new（ComfyUI版本在2023.09.08之前的选择old），放置到custom nodes文件夹中（注意解压之后不要有嵌套）
 
