@@ -180,7 +180,7 @@
 
 --------
 
- ### 2 Selector 选择器
+ ### 2. Selector 选择器
 
    1）设计目的：方便选择各种不同的输入，可用于搭建大型专业工作流
 
@@ -249,7 +249,7 @@
 --------
 ### Install 安装:
 
-1)Direct Download
+### 1) Direct Download
 
 * 下载之后解压，找到三个文件夹（Zho_Selector、Zho_Standard_new、Zho_Standard_old）
 
@@ -267,11 +267,11 @@
   
    Restart ComfyUI.
 
-2)Git (Selector + CoInput)
+### 2) Git (Selector + CoInput)
 
-注意：Git安装CoImput仅提供Zho_CoInput_new版本
+   注意：Git安装CoImput仅提供Zho_CoInput_new版本
 
-Note : Only Zho_CoInput_new for CoImput
+   Note : Only Zho_CoInput_new for CoImput
 
 
 
