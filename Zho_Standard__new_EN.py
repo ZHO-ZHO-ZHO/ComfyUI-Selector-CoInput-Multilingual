@@ -12,7 +12,7 @@ import folder_paths
 
 MAX_RESOLUTION=8192
 #------------------------------------------------------------------------------
-def load_checkpoint(ckpt_name,output_vae=True, output_clip=True):
+def load_checkpoint(ckpt_name, output_vae=True, output_clip=True):
 
         ckpt_path = folder_paths.get_full_path("checkpoints", ckpt_name)
         out = comfy.sd.load_checkpoint_guess_config(ckpt_path, output_vae=True, output_clip=True,
