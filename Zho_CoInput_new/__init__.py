@@ -1,0 +1,7 @@
+from .Zho_Standard_new import NODE_CLASS_MAPPINGS as NODE_CLASS_MAPPINGS_ZHO
+from .Zho_Standard_new_EN import NODE_CLASS_MAPPINGS  as NODE_CLASS_MAPPINGS_EN
+
+# Combine the dictionaries
+NODE_CLASS_MAPPINGS = {**NODE_CLASS_MAPPINGS_ZHO, **NODE_CLASS_MAPPINGS_EN}
+
+__all__ = ['NODE_CLASS_MAPPINGS']
