@@ -62,7 +62,10 @@
          New version is suitable for Comfyui versions updated on or after September 8, 2023, with module naming in the format Nodename_Zho.
 
      对比 | Comparison:
-     
+
+     ![image](https://github.com/ZHO-ZHO-ZHO/ComfyUI-Selector-CoInput-Multilingual/assets/140084057/11eaed99-1aa6-4aab-bd42-6f645dacaea8) ![image](https://github.com/ZHO-ZHO-ZHO/ComfyUI-Selector-CoInput-Multilingual/assets/140084057/733375e3-7622-4bbc-bdd0-186a18d4df15)
+
+
 
    3）4种模块的说明
 
