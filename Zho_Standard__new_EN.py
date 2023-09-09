@@ -96,7 +96,7 @@ class Co_Loader_Zho:
         vae: VAE | None = None
         
         #主模型
-        model, clip, vae = load_checkpoint(model)
+        model, clip, vae = load_checkpoint(ckpt_name)
         
         #Lora模型
         if lora_name != "None":
