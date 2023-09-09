@@ -1,5 +1,7 @@
 import torch
 
+from nodes import CLIPTextEncode
+
 from comfy.sd import CLIP, VAE
 
 import comfy.model_patcher
