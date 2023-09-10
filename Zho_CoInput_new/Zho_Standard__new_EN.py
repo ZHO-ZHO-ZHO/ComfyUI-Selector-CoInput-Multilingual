@@ -25,12 +25,14 @@ def load_checkpoint(ckpt_name,output_vae=True, output_clip=True):
         return model, clip, vae
 
 #------------------------------------------------------------------------------
-def load_lora(lora_name, model, clip, strength_model, strength_clip):
+def load_lora(model, clip, lora_name, strength_model, strength_clip):
 
         lora_path = folder_paths.get_full_path("loras", lora_name)
-        model_lora, clip_lora = comfy.sd.load_lora_for_models(model, clip, lora_path, strength_model, strength_clip)
-
-        return model, clip
+        lora = None
+        if lora is None:
+            lora = comfy.utils.load_torch_file(lora_path, safe_load=True)
+        model_lora, clip_lora = comfy.sd.load_lora_for_models(model, clip, lora, strength_model, strength_clip)
+        return (model_lora, clip_lora)
 
 #------------------------------------------------------------------------------
 # 添加一个辅助函数，用于交换宽度和高度
@@ -100,7 +102,7 @@ class Co_Loader_Zho:
         
         #Lora模型
         if lora_name != "None":
-            model, clip = load_lora(lora_name, model, clip, strength_model, strength_clip)
+            model, clip = load_lora(model, clip, lora_name, strength_model, strength_clip)
 
         #Clip跳过层        
         clip = clip.clone()
