@@ -21,12 +21,14 @@ def load_checkpoint(主模型,output_vae=True, output_clip=True):
         return model, clip, vae
 
 #------------------------------------------------------------------------------
-def load_lora(Lora模型, model, clip, Lora模型强度, Loraclip强度):
+def load_lora(model, clip, Lora模型, Lora模型强度, Loraclip强度):
 
         lora_path = folder_paths.get_full_path("loras", Lora模型)
-        model_lora, clip_lora = comfy.sd.load_lora_for_models(model, clip, lora_path, Lora模型强度, Loraclip强度)
-
-        return model, clip
+        lora = None
+        if lora is None:
+            lora = comfy.utils.load_torch_file(lora_path, safe_load=True)
+        model_lora, clip_lora = comfy.sd.load_lora_for_models(model, clip, lora, Lora模型强度, Loraclip强度)
+        return (model_lora, clip_lora)
 
 #------------------------------------------------------------------------------
 class Zho综合输入器:
@@ -91,7 +93,7 @@ class Zho模型加载器:
         
         #Lora模型
         if Lora模型 != "无":
-            model, clip = load_lora(Lora模型, model, clip, Lora模型强度, Loraclip强度)
+            model, clip = load_lora(model, clip, Lora模型, Lora模型强度, Loraclip强度)
 
         #Clip跳过层        
         clip = clip.clone()
